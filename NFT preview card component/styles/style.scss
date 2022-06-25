@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+// reset and typography
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+
+// body
+body {
+  background: #0D192C;
+}
+
+
+// classes
+.active {
+  opacity: 1 !important;
+}
+.mid-opacity {
+  opacity: 0.5 !important;
+}
+
+
+// card
+.card {
+  margin: 62px auto;
+  width: 327px;
+  background: #15263F;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  border-radius: 15px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // tablet
+  @media screen and (min-width: 768px) {
+    width: 350px;
+    margin: 152px auto 135px auto;
+  }
+
+
+  &__images{
+    display: flex;
+    width: 278px;
+    height: 278px;
+    // tablet
+    @media screen and (min-width: 768px) {
+      width: 302px;
+      height: 302px;
+    }
+  }
+  &__img {
+    img {
+      border-radius: 8px;
+      width: 278px;
+      height: 278px;
+      z-index: 0;
+      // tablet
+      @media screen and (min-width: 768px) {
+        width: 302px;
+        height: 302px;
+      }
+    }
+  }
+  &__box {
+    background: #00FFF8;
+    opacity: 0;
+    margin: 0 -278px 0 0;
+    border-radius: 8px;
+    width: 278px;
+    height: 278px;
+    z-index: 1;
+        
+    // tablet
+    @media screen and (min-width: 768px) {
+      margin: 0 -302px 0 0;
+      width: 302px;
+      height: 302px;
+    }
+  }
+  &__eye {
+    opacity: 0;
+    margin: 0 -278px 0 0;
+    border-radius: 8px;
+    width: 278px;
+    height: 278px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+      transition: .4s;
+    }
+
+    // tablet
+    @media screen and (min-width: 768px) {
+      margin: 0 -302px 0 0;
+      width: 302px;
+      height: 302px;
+    }
+  }
+
+
+  &__title {
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+    
+    &:hover {
+      cursor: pointer;
+      color: #00FFF8;
+      transition: .4s;
+    }
+  }
+
+
+  &__text {
+    margin-top: 12px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #8BACD9;
+    
+    // tablet
+    @media screen and (min-width: 768px) {
+      margin-top: 16px;
+    }
+  }
+
+
+  &__info {
+    margin-top: 17px;
+    width: 278px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        
+    // tablet
+    @media screen and (min-width: 768px) {
+      margin-top: 24px;
+      width: 301px;
+    }
+  }
+
+  &__crypto {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  &__ethereum {
+    width: 11px;
+    height: 18px;
+  }
+  &__price {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    color: #00FFF8;
+    
+    // tablet
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__clock {
+    width: 16px;
+    height: 16px;
+  }
+  &__days-left {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #8BACD9;
+    
+    // tablet
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+
+  &__divisor {
+    width: 278px;
+    height: 1px;
+    margin-top: 16px;
+    background: #2E405A;
+
+    // tablet
+    @media screen and (min-width: 768px) {
+      width: 302px;
+      margin-top: 24px;
+    }
+  }
+
+
+  &__footer {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: -4px;
+    
+    // tablet
+    @media screen and (min-width: 768px) {
+      margin-bottom: 5px;
+    }
+    
+  }
+  &__avatar {
+    img {
+      width: 33px;
+      height: 33px;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+    }
+  }
+  &__name {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #8BACD9;
+    &--white {
+      color: #FFFFFF;
+      &:hover {
+        cursor: pointer;
+        color: #00FFF8;
+        transition: .4s;
+      }
+    }
+
+    // tablet
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: -5px;
+    }
+  }
+}
+
+
+// footer
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+  a {
+    color: #00FFF8;
+  }
+}
