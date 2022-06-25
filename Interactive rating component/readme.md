@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [My solution](https://www.frontendmentor.io/solutions/interactive-rating-component-sibRuynOmv)
-- Live Site URL: [Interactive rating component](https://nachogonzalia.github.io/interactive-rating-component/)
+- Live Site URL: [Interactive rating component](https://codepen.io/nachogonzalia/pen/poaXKjP)
 
 ## My process
 
