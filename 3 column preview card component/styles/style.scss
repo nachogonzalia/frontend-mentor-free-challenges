@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+// reset and typography
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca';
+}
+
+
+// body
+body {
+  background: #F2F2F2;
+}
+
+
+// cards
+.container {
+  margin: 88px auto;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #E28625;
+  border-radius: 8px;
+  // desktop
+  @media screen and (min-width: 1200px) {
+    margin: 171px auto (129px - 15px) auto;
+    width: 920px;
+    flex-direction: row;
+  }
+
+  &__card {
+    padding: 48px;
+    &--sedans {
+      border-radius: 8px;
+      background: #E28625;
+      padding: 48px 50px 48px 48px;
+    }
+    &--suvs {
+      border-radius: 0;
+      background: #006971;
+      padding: 48px 56px 48px 48px;
+    }
+    &--luxury {
+      border-radius: 0 0 8px 8px;
+      background: #004140;
+      // desktop
+      @media screen and (min-width: 1200px) {
+        border-radius: 0 8px 8px 0;
+      }
+    }
+  }
+  .img {
+    width: 64px;
+    height: 40px;
+  }
+  .title {
+    margin-top: 35px;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    // desktop
+    @media screen and (min-width: 1200px) {
+      margin-top: 30px;
+    }
+  }
+  .text {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    opacity: 0.75;
+  }
+  .btn {
+    margin: 25px 0 5px 0;
+    width: 146px;
+    height: 48px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background: #F2F2F2;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    // desktop
+    @media screen and (min-width: 1200px) {
+      margin: 83px 0 0 0;
+    }
+    &--sedans {
+      color: #E28625;
+      &:hover {
+        cursor: pointer;
+        background: #E28625;
+        color: #fff;
+        border: 2px solid #FFFFFF;
+        transition: .4s;
+      }
+    }
+    &--suvs {
+      color: #006971;
+      &:hover {
+        cursor: pointer;
+        background: #006971;
+        color: #fff;
+        border: 2px solid #FFFFFF;
+        transition: .4s;
+      }
+    }
+    &--luxury {
+      color: #004140;
+      &:hover {
+        cursor: pointer;
+        background: #004140;
+        color: #fff;
+        border: 2px solid #FFFFFF;
+        transition: .4s;
+      }
+    }
+  }
+}
+
+
+// footer
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: #004140;
+  }
+}
