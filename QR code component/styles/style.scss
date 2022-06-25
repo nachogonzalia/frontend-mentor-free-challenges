@@ -1,0 +1,77 @@
+// typhography
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+
+// reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+// body
+body {
+  background: #D5E1EF;
+}
+
+
+// card
+.card {
+  width: 320px;
+  margin: 85px auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #fff;
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
+  padding: 16px 16px 40px 16px;
+  @media screen and (min-width: 1440px) {
+    margin: 152px auto 135px auto;
+  }
+
+  &__img {
+    border-radius: 10px;
+  }
+
+  .body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__title {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 28px;
+      color: #1F314F;
+      width: 288px;
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      letter-spacing: 0.1875px;
+      color: #7D889E;
+      width: 256px;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+// footer
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #000;
+  a {
+    color: #1F314F;
+  }
+}
