@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [My solution](https://www.frontendmentor.io/solutions/faq-accordion-card-Q0JsjcurJQ)
-- Live Site URL: [Add live site URL here](https://codepen.io/nachogonzalia/full/bGvEYNm)
+- Live Site URL: [FAQ accordion card](https://codepen.io/nachogonzalia/full/bGvEYNm)
 
 ## My process
 
