@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+// reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  //font-family: 'Open Sans', sans-serif;
+  //font-family: 'Poppins', sans-serif;
+}
+
+
+// colors
+:root {
+  --violet: #674baf;
+  --soft-magenta: #e882e8;
+  --pure-white: #fff;
+  --magenta: #ff52c1;
+}
+
+
+// typhography
+.title {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  text-align: center;
+  color: var(--pure-white);
+  // tablet
+  @media (min-width: 768px) {
+    font-size: 4rem;
+    line-height: 6rem;
+    text-align: start;
+  }
+}
+.text {
+  margin-top: 1.6rem;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+  color: var(--pure-white);
+  // tablet
+  @media (min-width: 768px) {
+    margin-top: 1.9rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    text-align: start;
+  }
+}
+
+
+// components
+.btn {
+  margin: 2.4rem auto 0 auto;
+  width: 20rem;
+  height: 4rem;
+  background: var(--pure-white);
+  box-shadow: .1rem .3rem .5rem rgba(0, 0, 0, 0.269022);
+  border-radius: 2rem;
+  display: grid;
+  place-items: center;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: var(--violet);
+  text-decoration: none;
+  &:hover {
+    background-color: var(--soft-magenta);
+    color: var(--pure-white);
+    transition: .4s;
+  }
+  // desktop
+  @media (min-width: 1440px) {
+    height: 5.6rem;
+    box-shadow: .2rem .4rem .9rem .3rem rgba(0, 0, 0, 0.258633);
+    border-radius: 2.8rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+  // desktop
+  @media (min-width: 1440px) {
+    margin: 2.4rem 0 0 0;
+  }
+}
+
+
+// layout
+body {
+  background: url(../images/bg-mobile.svg) no-repeat center top;
+  background-size: contain;
+  background-color: var(--violet);
+  // tablet
+  @media (min-width: 900px) {
+    background: url(../images/bg-desktop.svg) left top;
+    background-color: var(--violet);
+    background-size: cover;
+  }
+  // desktop
+  @media (min-width: 1440px) {
+    background-repeat: no-repeat;
+    background-size: 131.9rem 80.1rem;
+  }
+}
+.logo {
+  margin: 3rem 0 0 4rem;
+  width: 12rem;
+  height: 1.9rem;
+  background: url(../images/logo.svg) no-repeat;
+  background-size: contain;
+  // desktop
+  @media (min-width: 900px) {
+    margin: 5.4rem 0 0 7.8rem;
+    width: 21rem;
+    height: 5rem;
+    background-size: cover;
+  }
+}
+.hero {
+  width: 30.4rem;
+  margin: 10.4rem auto 0 auto;
+  // tablet
+  @media (min-width: 900px) {
+    width: 90rem;
+  }
+  // desktop
+  @media (min-width: 1440px) {
+    margin-top: 8.6rem;
+    width: 127.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5.9rem;
+  }
+
+  &__img {
+    margin: 0 auto;
+    width: 29.6rem;
+    height: 20.9rem;
+    background: url(../images/illustration-mockups.svg) no-repeat;
+    background-size: contain;
+    // desktop
+    @media (min-width: 1440px) {
+      width: 70rem;
+      height: 50.5rem;
+      background-position: center;
+      padding: 0;
+    }
+  }
+
+  &__content {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    // desktop
+    @media (min-width: 900px) {
+      width: 52rem;
+      margin: 4.7rem auto 0 auto;
+    }
+  }
+
+}
+.social {
+  margin: 6.4rem auto 1rem auto;
+  max-width: 10.4rem;
+  max-height: 2.8rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.05rem;
+  // desktop
+  @media (min-width: 1440px) {
+    margin: 2.5rem 8rem 2rem auto;
+    max-width: 15.2rem;
+    max-height: 4rem;
+    gap: 1.6rem;
+  }
+
+  &__logo {
+    width: 2.8rem;
+    height: 2.8rem;
+    border: 0.8px solid var(--pure-white);
+    border-radius: 50%;
+    cursor: pointer;
+    // desktop
+    @media (min-width: 1440px) {
+      width: 4rem;
+      height: 4rem;
+    }
+    &:hover {
+      border: 1.18px solid var(--magenta);
+      transform: scale(1.1);
+    }
+    &--fb {
+      background: url(../images/social-media/facebook-f-brands.svg) no-repeat;
+      background-size: .611rem 1.33rem;
+      background-position: center;
+      // desktop
+      @media (min-width: 1440px) {
+        background-size: .9rem 1.9rem;
+      }
+      &:hover {
+        background: url(../images/social-media/facebook-f-brands-hover.svg) no-repeat;
+        background-size: .611rem 1.33rem;
+        background-position: center;
+        // desktop
+        @media (min-width: 1440px) {
+          background-size: .9rem 1.9rem;
+        }
+      }
+    }
+    &--tw {
+      background: url(../images/social-media/twitter-brands.svg) no-repeat;
+      background-size: 1.2rem 1rem;
+      background-position: center;
+      // desktop
+      @media (min-width: 1440px) {
+        background-size: 1.8rem 1.4rem;
+      }
+      &:hover {
+        background: url(../images/social-media/twitter-brands-hover.svg) no-repeat;
+        background-size: 1.2rem 1rem;
+        background-position: center;
+        // desktop
+        @media (min-width: 1440px) {
+          background-size: 1.8rem 1.4rem;
+        }
+      }
+    }
+    &--ig {
+      background: url(../images/social-media/instagram-brands.svg) no-repeat;
+      background-size: 1.27rem 1.32rem;
+      background-position: center;
+      // desktop
+      @media (min-width: 1440px) {
+        background-size: 1.88rem 1.88rem;
+      }
+      &:hover {
+        background: url(../images/social-media/instagram-brands-hover.svg) no-repeat;
+        background-size: 1.27rem 1.32rem;
+        background-position: center;
+        // desktop
+        @media (min-width: 1440px) {
+          background-size: 1.88rem 1.88rem;
+        }
+      }
+    }
+  }
+}
+
+
+// footer
+.attribution {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  a {
+    color: var(--pure-white);
+    text-decoration: none;
+    &:hover {
+      color: var(--magenta);
+      transition: .4s;
+    }
+  }
+}
+
+
+// classes
+.hide {
+  display: none;
+}
