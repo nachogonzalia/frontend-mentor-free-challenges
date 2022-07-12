@@ -48,5 +48,5 @@ Users should be able to:
 
 - Frontend Mentor - [@nachogonzalia](https://www.frontendmentor.io/profile/nachogonzalia)
 - CodePen - [@nachogonzalia](https://codepen.io/nachogonzalia)
-- FreeCodeCAmp - [@nachogonzalia](https://www.freecodecamp.org/nachogonzalia)
+- FreeCodeCamp - [@nachogonzalia](https://www.freecodecamp.org/nachogonzalia)
 - Twitter - [@nachogonzalia_](https://www.twitter.com/nachogonzalia_)
