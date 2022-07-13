@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+// reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+  font-size: 10px;
+}
+
+
+// colors
+:root {
+  --light-cyan: #cee3e9;
+  --neon-green: #52ffa8;
+  --grayish-blue: #4e5d73;
+  --dark-grayishblue: #323a49;
+  --dark-blue: #1f2632;
+}
+
+
+// typhography
+.advice-id {
+  font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  letter-spacing: .3rem;
+  color: var(--neon-green);
+  text-transform: uppercase;
+  // tablet
+  @media (min-width: 768px) {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    letter-spacing: .41rem;
+  }
+}
+.advice-quote {
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 3.3rem;
+  letter-spacing: -.0257143rem;
+  color: var(--light-cyan);
+  // tablet
+  @media (min-width: 768px) {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+    letter-spacing: -.03rem;
+  }
+}
+
+
+// components
+.button {
+  width: 6.4rem;
+  height: 6.4rem;
+  display: grid;
+  place-content: center;
+  background: var(--neon-green);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 0px 40px #53ffaa;
+    transition: .4s;
+  }
+}
+
+
+// layout
+body {
+  background-color: var(--dark-blue);
+}
+.card {
+  margin: 12rem auto;
+  padding: 4rem 2.4rem 6.4rem 2.4rem;
+  width: 34.3rem;
+  background: var(--dark-grayishblue);
+  box-shadow: 3rem 5rem 8rem rgba(0, 0, 0, 0.100202);
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  // tablet
+  @media (min-width: 768px) {
+    padding: 4.8rem 4.8rem 7.2rem 4.8rem;
+    width: 54rem;
+  }
+  // desktop
+  @media (min-width: 1024px) {
+    margin: 22.3rem auto 24rem auto;
+  }
+  &__advice {
+    margin-top: 2.4rem;
+    // tablet
+    @media (min-width: 768px) {
+      margin-top: 2.4rem;
+    }
+  }
+  &__divider {
+    margin-top: 2.4rem;
+    &--mobile {
+      // tablet
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+    &--desktop {
+      display: none;
+      // tablet
+      @media (min-width: 768px) {
+        display: block;
+        margin-top: 4rem;
+      }
+    }
+  }
+  &__button {
+    position: absolute;
+    bottom: -3.2rem;
+    left: 14rem;
+    // tablet
+    @media (min-width: 768px) {
+      left: 23.8rem;
+    }
+  }
+}
+
+
+// footer
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--light-cyan);
+  a {
+    color: var(--neon-green);
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+}
