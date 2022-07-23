@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+// reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+// colors
+:root {
+  --gradient: linear-gradient(90deg, #FFA197 0%, #FF4A95 100%);
+  --pale-blue: #dBd9ff;
+  --grayish-blue: #848794;
+  --dark-blue: #1e2d69;
+  --very-dark-blue: #0f1b3d;
+  --darker-blue: #0c122c;
+}
+
+
+// classes
+.bold {
+  font-weight: 700 !important;
+}
+.big-number {
+  font-size: 4rem;
+  line-height: 4rem;
+  color: var(--darker-blue);
+}
+.gb-left {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: .1rem;
+  color: var(--darker-blue);
+  opacity: 0.5;
+  margin-top: .5rem;
+  text-transform: uppercase;
+}
+
+// typography
+.text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: var(--pale-blue);
+}
+
+
+// layout
+body {
+  background: url(../images/bg-mobile.png) no-repeat;
+  background-size: cover;
+  background-color: var(--very-dark-blue);
+  // desktop
+  @media (min-width: 1024px) {
+    background: url(../images/bg-desktop.png) no-repeat;
+    background-color: var(--darker-blue);
+    background-size: 100% 42rem;
+    background-position: bottom;
+  }
+}
+.container {
+  width: 32.6rem;
+  margin: 12.7rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  // desktop
+  @media (min-width: 1024px) {
+    width: 92rem;
+    margin: 28.9rem auto 30rem auto;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 3rem;
+  }
+
+  &__top {
+    background: var(--dark-blue);
+    box-shadow: 0 .75rem 10rem -3rem rgba(0, 0, 0, 0.24776);
+    border-radius: 1rem 10rem 1rem 1rem;
+    padding: 4rem 10.8rem 4rem 4.11rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.3rem;
+
+    // desktop
+    @media (min-width: 1024px) {
+      padding: 4rem 13.3rem 4rem 4rem;
+      height: 20.1rem;
+    }
+    &__img {
+      width: 13.5rem;
+      height: 4rem;
+    }
+  }
+  &__files {
+    display: flex;
+    flex-direction: row;
+    gap: 1.6rem;
+    height: 4.8rem;
+    .btn {
+      width: 4.81rem;
+      height: 4.8rem;
+      background-color: var(--darker-blue);
+      border-radius: 1rem;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+        transition: .4s;
+      }
+    }
+  }
+
+  &__bottom {
+    background: var(--dark-blue);
+    box-shadow: 0 7.5rem 10rem -3rem rgba(0, 0, 0, 0.24776);
+    border-radius: 1rem;
+    padding: 3.2rem 3.2rem 5.2rem 3.2rem;
+    position: relative;
+
+    // desktop
+    @media (min-width: 1024px) {
+      padding: 4rem;
+      height: 15.4rem;
+    }
+  }
+}
+// line of storage
+.line {
+  margin-top: 1.6rem;
+  width: 26.2rem;
+  height: 2rem;
+  background: rgba(12, 18, 44, .5);
+  border-radius: 1rem;
+  position: relative;
+  // desktop
+  @media (min-width: 1024px) {
+    width: 45.9rem;
+  }
+  &__storage {    
+    width: 19.3rem;
+    height: 1.4rem;
+    background: var(--gradient);
+    border-radius: .8rem;
+    position: absolute;
+    top: .3rem;
+    left: .3rem;
+    // desktop
+    @media (min-width: 1024px) {
+      width: 33.9rem;
+    }
+    &--circle {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      top: .2rem;
+      left: 18.1rem;
+      // desktop
+      @media (min-width: 1024px) {
+        left: 32.7rem;
+      }
+    }
+  }
+}
+// storage indicator
+.storage {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 26.2rem;
+  // desktop
+  @media (min-width: 1024px) {
+    width: 46.1rem;
+    margin-top: .8rem;
+  }
+}
+// storage sign
+.sign-left {
+  background: #FFFFFF;
+  box-shadow: 0 7.5rem 10rem -3rem rgba(0, 0, 0, 0.24776);
+  border-radius: 1rem;
+  padding: 1.6rem 2.4rem;
+  display: flex;
+  gap: .9rem;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -3.6rem;
+  left: 7.4rem;
+  // desktop
+  @media (min-width: 1024px) {
+    max-width: 17.9rem;
+    max-height: 7.2rem;
+    bottom: auto;
+    top: -4.7rem;
+    left: auto;
+    right: 4rem;
+    border-radius: 1rem 1rem 0 1rem;
+  }
+}
+.triangle {
+  // desktop
+  @media (min-width: 1024px) {
+    width: 0;
+    height: 0;
+    border-right: 1.13rem solid transparent;
+    border-top: 1.13rem solid transparent;
+    border-left: 1.13rem solid #fff;
+    border-bottom: 1.13rem solid #fff;
+    rotate: 180deg;
+    position: absolute;
+    top: 2.4rem;
+    right: 4rem;
+  }
+}
+
+
+// footer
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--grayish-blue);
+  a {
+    color: var(--pale-blue);
+    text-decoration: none;
+  }
+}
